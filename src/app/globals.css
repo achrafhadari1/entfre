@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "casta";
+  src: url("/fonts/Casta-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +29,71 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.casta {
+  font-family: "casta", Helvetica, sans-serif;
+}
+
+.petrona-italic {
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+}
+.petrona-normal {
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.style-2 {
+  border: 3px solid #fff;
+  color: #fff;
+  font: 12px Montserrat;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 600;
+  width: 14rem; /* max width of button */
+  display: block;
+  text-align: left;
+  position: relative;
+}
+.style-2:before {
+  content: ">";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  width: 35px;
+  height: 100%;
+  line-height: 31px;
+  text-align: center;
+  font-family: consolas;
+  padding-right: 15px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.style-2:hover:before {
+  padding-right: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.style-2:hover {
+  background: yellow;
+  border-color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #000;
 }
