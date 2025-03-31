@@ -50,7 +50,7 @@ export const Horizontalsection = () => {
         ].map((article, index) => (
           <motion.div
             key={index}
-            className="flex flex-col min-w-[80%] md:min-w-[30%] snap-center"
+            className="flex w-[33.33%] flex-col min-w-[80%] md:min-w-[30%] snap-center"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -59,7 +59,7 @@ export const Horizontalsection = () => {
             <img
               src={article.img}
               alt=""
-              className="object-cover h-[200px] md:h-[65%] "
+              className="object-cover h-[200px] md:h-[60%] "
             />
             <div className="p-4 petrona-italic text-sm md:text-[1.3rem]">
               {article.author}

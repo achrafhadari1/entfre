@@ -33,7 +33,7 @@ export const Recentlyadded = () => {
           <div className="w-full md:w-[70%] m-auto text-2xl md:text-[2.5rem]">
             “Airless Spaces” Captures the Nadir of the Second Wave
           </div>
-          <div className="rec-added-text text-right pb-2 petrona-italic md:text-center">
+          <div className="rec-added-text text-right pb-2 petrona-italic ">
             S. C. Cornell
           </div>
         </div>
