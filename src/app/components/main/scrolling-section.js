@@ -10,7 +10,7 @@ export const Scrollingsection = () => {
           "I think cinema, movies, and magic have always been closely
           associated. The very earliest people who made film were magicians."
           <br />
-          <span className="text-[#0068ff]">—</span>
+          <span className="text-[#d4a857]">—</span>
           <br /> Francis Ford Coppola
         </div>
       </div>
@@ -58,7 +58,7 @@ export const Scrollingsection = () => {
             <div className="font-bold mt-2 text-[2rem] md:text-[3rem]">
               {article.title}
             </div>
-            <div className="text-[#0068ff] text-[1.2rem] md:text-[1.8rem]">
+            <div className="text-[#d4a857] text-[1.2rem] md:text-[1.8rem]">
               {article.subtitle}
             </div>
           </motion.div>

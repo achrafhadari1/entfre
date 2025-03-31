@@ -16,7 +16,7 @@ export const Recentlyadded = () => {
           <div className="w-full md:w-[70%] m-auto text-2xl md:text-[2.5rem]">
             A Poet’s Contemporary Twist on the Bildungsroman
           </div>
-          <div className="pb-2">By Mitchell Beaupre</div>
+          <div className="pb-2 petrona-italic">Mitchell Beaupre</div>
         </div>
       </div>
 
@@ -33,7 +33,9 @@ export const Recentlyadded = () => {
           <div className="w-full md:w-[70%] m-auto text-2xl md:text-[2.5rem]">
             “Airless Spaces” Captures the Nadir of the Second Wave
           </div>
-          <div className="text-right pb-2">By S. C. Cornell</div>
+          <div className="rec-added-text text-right pb-2 petrona-italic md:text-center">
+            S. C. Cornell
+          </div>
         </div>
       </div>
 
@@ -50,7 +52,7 @@ export const Recentlyadded = () => {
           <div className="w-full md:w-[70%] m-auto text-2xl md:text-[2.5rem]">
             Pedro Lemebel, a Radical Voice for Calamitous Times
           </div>
-          <div className="pb-2">By Drew Burnett Gregory</div>
+          <div className="pb-2 petrona-italic">Drew Burnett Gregory</div>
         </div>
       </div>
     </div>

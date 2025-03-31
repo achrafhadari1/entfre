@@ -59,7 +59,7 @@ export const Horizontalsection = () => {
             <img
               src={article.img}
               alt=""
-              className="object-cover h-[200px] md:h-[65%] rounded-lg"
+              className="object-cover h-[200px] md:h-[65%] "
             />
             <div className="p-4 petrona-italic text-sm md:text-[1.3rem]">
               {article.author}

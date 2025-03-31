@@ -1,14 +1,32 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Petrona:wght@700&display=swap");
 @font-face {
   font-family: "casta";
   src: url("/fonts/Casta-Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "pilowlava";
+  src: url("/fonts/Pilowlava-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+.castoro-regular {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.castoro-regular-italic {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @theme inline {
@@ -33,7 +51,12 @@ body {
 .casta {
   font-family: "casta", Helvetica, sans-serif;
 }
-
+.pilowlava-normal {
+  font-family: "pilowlava", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 .petrona-italic {
   font-family: "Petrona", serif;
   font-optical-sizing: auto;
@@ -88,7 +111,7 @@ body {
   transition: all 0.3s ease-out;
 }
 .style-2:hover {
-  background: yellow;
+  background: #d4a857;
   border-color: #fff;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -96,4 +119,74 @@ body {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   color: #000;
+}
+.nav-buttons {
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+/* The animated underline */
+.nav-buttons::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 8px;
+  width: 0;
+  height: 3px;
+  background-color: currentColor;
+  transition: width 0.3s ease-out;
+}
+
+/* On hover, expand the underline from the left */
+.nav-buttons:hover::after {
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Responsiveness: Mobile Menu */
+@media (max-width: 768px) {
+  .rec-added-text {
+    text-align: center;
+  }
+  /* When the menu is open on mobile, the dropdown menu should display */
+  .nav-container {
+    display: none;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    padding: 12px 0;
+  }
+  h5 {
+    font-size: 2.5rem; /* Adjusting font size for smaller screens */
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-buttons {
+    color: black;
+    padding: 10px;
+    font-size: 1rem; /* Smaller font for smaller screens */
+  }
+  .rec-added-text {
+    text-align: center;
+  }
+  h5 {
+    font-size: 2rem; /* Even smaller font for very small screens */
+  }
+  .mobile-border {
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    height: 2px;
+  }
 }

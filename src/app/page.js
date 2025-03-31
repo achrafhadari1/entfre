@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { Scrollingsection } from "./components/main/scrolling-section";
 import { Recentlyadded } from "./components/main/recently-added";
 import { Horizontalsection } from "./components/main/horizontal-section";
+import { Header } from "./components/main/header";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <Recentlyadded />
       <Horizontalsection />
       <div className="h-auto min-h-screen flex items-center justify-center w-full casta p-6">
@@ -47,13 +49,14 @@ export default function Home() {
                 styled by Mel Ottenberg. The print edition is still available at
                 our online store.
               </p>
-              <div className="mt-4 text-[1.2rem] md:text-[1.3rem]">
-                By ACHRAF HADARI
+              <div className="mt-4 text-[1.2rem] md:text-[1.3rem] petrona-italic">
+                Achraf Hadari
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="mobile-border"></div>
 
       <Scrollingsection />
       {/*  Next Section */}
